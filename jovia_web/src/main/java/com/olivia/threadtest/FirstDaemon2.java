@@ -1,4 +1,4 @@
-package com.olivia.service;
+package com.olivia.threadtest;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -13,7 +13,7 @@ public class FirstDaemon2 implements Runnable {
     private Thread t;
     private String name;
 
-    FirstDaemon2(String name) {
+    public FirstDaemon2(String name) {
         this.name = name;
     }
 

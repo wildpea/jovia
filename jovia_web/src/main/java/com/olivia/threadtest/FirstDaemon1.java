@@ -1,4 +1,4 @@
-package com.olivia.service;
+package com.olivia.threadtest;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -8,21 +8,16 @@ import lombok.extern.slf4j.Slf4j;
  * @Description
  */
 @Slf4j
-public class FirstDaemon3 extends Thread {
+public class FirstDaemon1 implements Runnable {
 
     private static Integer i;
-
-    FirstDaemon3(String name) {
-        super(name);
-        log.info("in construct! name: {}", name);
-    }
 
     @Override
     public void run () {
         if (i == null) {
             i = 0;
         }
-        int j = 20;
+        int j = 10;
         while (j-- > 0) {
             log.info("tid: {}, name: {}, j: {}", Thread.currentThread().getId(), Thread.currentThread().getName(), ++i);
         }
