@@ -1,0 +1,5 @@
+rootProject.name = 'jovia'
+include 'biz'
+include 'common'
+include 'jovia_web'
+

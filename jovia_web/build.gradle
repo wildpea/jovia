@@ -1,0 +1,9 @@
+jar {
+    baseName = 'jovia_web'
+    version = ''
+}
+
+dependencies {
+    compile project(":common")
+    compile project(":biz")
+}

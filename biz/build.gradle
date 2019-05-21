@@ -1,0 +1,8 @@
+jar {
+    baseName = 'biz'
+    version = ''
+}
+
+dependencies {
+    compile project(":common")
+}
